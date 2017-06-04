@@ -1,0 +1,82 @@
+Categoria Curso
+
+1	Adultos
+2	Niños
+3	Profesionales
+4	Empresarios
+5	Otros
+
+Ciudad Curso
+
+1	Dubai
+2	Nueva York
+3	Roma
+4	Berlin
+5	Estambul
+6	Moscú
+7	París
+8	Miami
+9	Dallas
+10	Londres
+11	Tokyo
+12	Bogotá
+
+Duracion Curso
+
+1	1 Semana
+2	2 Semanas
+3	3 Semanas
+4	4 Semanas
+5	5 Semanas
+6	6 Semanas
+7	7 Semanas
+8	8 Semanas
+9	9 Semanas
+10	10 Semanas
+11	11 Semanas
+12	12 Semanas
+
+Genero Cliente
+
+1	Femenino
+2	Masculino
+3	Otro
+
+Idioma Curso
+
+1	Ingles
+2	Español
+3	Francés
+4	Italiano
+5	Árabe
+6	Turco
+7	Alemán
+8	Ruso
+9	Japonés
+
+Pais Curso
+
+1	Emiratos Árabes Unidos
+2	Estados Unidos
+3	Italia
+4	Alemania
+5	Turquía
+6	Rusia
+7	Francia
+8	Inglaterra
+9	Japon
+10	Colombia
+ 
+Tipo Alojamiento
+
+1	Casa de Familia
+2	Hotel
+3	Sin Alojamiento
+
+Tipo Curso
+
+1	Curso Administrativo
+2	Curso Estándar
+3	Curso Semi-intensivo
+4	Curso Intensivo
+
