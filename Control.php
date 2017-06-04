@@ -10,10 +10,27 @@ if (isset($_POST['registrarsePagina'])) {
     $db->conectar();
     if ($_POST['pass'] == $_POST['repetirPass']) {
         $db->insertar(array(0, $_POST['NombreUsuario'], $_POST['pass']), "usuarios");
-        header("location:index.php");
+        echo '<script>
+            setTimeout(function() {
+                swal({
+                    title: "Registro Exitoso",                    
+                    type: "success"
+                }, function() {
+                    window.location = "index.php";
+                });
+            }, 500);
+        </script>';
     } else {
-        echo 'Contraseñas no coinciden';
-        require_once 'index.php';
+        echo '<script>
+                setTimeout(function() {
+                    sweetAlert({
+                        title: "Contraseñas no coinciden",
+                        type: "error"
+                    }, function() {
+                        window.location = "index.php";
+                    });
+                }, 500);
+            </script>';
     }
 }
 
@@ -34,7 +51,6 @@ if (isset($_POST['enviarCotizacion'])) {
     $db = new Database();
     $db->conectar();
     $db->insertar(array($_POST['documentoCliente'], $_POST['nombreCliente'], $_POST['apellidoCliente'], $_POST['generoCliente'], $_POST['edadCliente'], $_POST['direccionCliente'], $_POST['telefonoCliente'], $_POST['celularCliente']), "cliente");
-    // header("location:SolicitarCotizacion.php");
     echo '<script>
     setTimeout(function() {
         swal({

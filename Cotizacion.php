@@ -316,11 +316,6 @@ session_start();
                             </div>
                             <div class="col-md-5 buttons">
                                 <br><input type="submit" value="Enviar" name="enviarCotizacion" class="btn" id="enviarCotizacion"/>
-                                <script>
-                                    function EventoAlert() {
-                                        swal("", ", "success");
-                                    }
-                                </script>
                             </div>
                             <div class="clearfix"> </div>
                         </div>

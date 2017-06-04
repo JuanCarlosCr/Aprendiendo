@@ -1,5 +1,7 @@
-<?php
+<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+<script type="text/javascript" src="js/sweetalert.min.js"></script>
 
+<?php
 session_start();
 //echo $_SESSION['userid'];
 include_once "Conexion.php";
@@ -36,14 +38,28 @@ if (!isset($_SESSION['userid'])) {
     if (isset($_POST['ingresarPagina'])) {
         if (verificar_login($_POST['nombreUsuario'], $_POST['password'], $result) == 1) {
             $_SESSION['userid'] = $_POST['nombreUsuario'];
-            echo 'Ha ingresado a la pagina';
-            echo '<a href="Logout.php"> Logout </a>';
-//            header("Location:index.php");
-//            exit();
-            require 'index.php';
+            echo '<script>
+                setTimeout(function() {
+                    swal({
+                        title: "Ingreso Exitoso",                        
+                        type: "success"
+                    }, function() {
+                        window.location = "index.php";
+                    });
+                }, 500);
+            </script>';
         } else {
-            echo 'Datos erroneos intente nuevamente';
-            require 'index.php';
+            echo '<script>
+                setTimeout(function() {
+                    sweetAlert({
+                        title: "Datos erroneos",
+                        text: "El nombre de usuario y/o contraseña no son correctos",
+                        type: "error"
+                    }, function() {
+                        window.location = "index.php";
+                    });
+                }, 100);
+            </script>';
         }
     }
 }

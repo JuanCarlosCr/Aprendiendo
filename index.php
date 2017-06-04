@@ -8,7 +8,7 @@
         <!-- Meta tag Keywords -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta id="usuario" content="<?php // echo $_SESSION['userid']       ?>">
+        <meta id="usuario" content="<?php // echo $_SESSION['userid']         ?>">
         <meta name="keywords" content="Educational Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
               Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
@@ -65,7 +65,6 @@
                                     <input type="password" placeholder="Contraseña" name="password" id="password" required="">
                                     <div class="g-recaptcha" data-sitekey="6LcqxxsUAAAAAArrOk_VtGKqNsEvRqbLoCAYnJgE"></div>
                                     <input type="submit" value="Ingresar" name="ingresarPagina" class="btn" id="ingresarSistema"> <br>
-                                    <h6><a href="#">¿Has olvidado la contraseña?</a> </h6>                                    
                                 </form>
                             </div>
                             <!--//newsletter-->
