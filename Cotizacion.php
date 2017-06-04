@@ -19,7 +19,6 @@ session_start();
         <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-        <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
         <!-- //css files -->
         <!-- online-fonts -->
         <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext" rel="stylesheet">
@@ -30,8 +29,7 @@ session_start();
         <script src="js/accionesSelect.js"></script>
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="js/accionesLogin.js"></script>
-        <script type="text/javascript" src="js/sweetalert.min.js"></script>
-        <script type="text/javascript" src="js/sweetalert.min.js"></script>
+
     </head>
     <body>
         <div class="main-w3layouts" id="home">
@@ -317,10 +315,10 @@ session_start();
                                 <br><input type="number" placeholder="Celular" name="celularCliente" id="celularCliente" required=""><br>
                             </div>
                             <div class="col-md-5 buttons">
-                                <br><input type="submit" value="Enviar" name="enviarCotizacion" class="btn" id="enviarCotizacion" onclick="EventoAlert()"/>
+                                <br><input type="submit" value="Enviar" name="enviarCotizacion" class="btn" id="enviarCotizacion"/>
                                 <script>
                                     function EventoAlert() {
-                                        swal("Gracias por preferirnos!", "En breve uno de nuestros asesores se pondra en contacto con usted para darle mas informacion, Gracias de nuevo por preferir Aprendiendo", "success");
+                                        swal("", ", "success");
                                     }
                                 </script>
                             </div>
